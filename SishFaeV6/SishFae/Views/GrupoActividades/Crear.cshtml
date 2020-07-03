@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Grupo</title>
+
+
+    <style type="text/css">
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Registrar Nuevo Grupo</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+
+                        <div class="cell-md-6">
+                            <label>ID_Grupo</label>
+                            <input type="number" required="">
+                            <div class="invalid_feedback">Ingrese el codigo del grupo</div>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Nombre de Area</label>
+                            <input type="text" required="">
+                            <div class="invalid_feedback">Ingrese el nombre de grupo</div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-3">
+                        
+                        <!--Lista desplegable-->
+                        <div class="cell-md-12">
+                            <label>Estado</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="Habilitado">Habilitado</option>
+                                <option value="En espera">En Espera</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                        <!--Botones de Crear y volver atras-->
+                        <button class="button primary">Guardar</button>
+                        <input type="reset" class="button" value="Limpiar" />
+                        <a href="@Url.Action("Index","GrupoActividades")"> <input type="button" value="Atras"></a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+

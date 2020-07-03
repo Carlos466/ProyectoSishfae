@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Tareas</title>
+
+
+    <style type="text/css">
+
+
+        table {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <br />
+        <h3 class="dashboard-section-title  text-center text-left-md w-100">Lista Tareas</h3>
+        <br />
+        <br />
+
+
+        <!--Boton + para agregar Usuario-->
+        <div class="multi-action">
+            <button class="action-button rotate-minus bg-green fg-white" onclick="$(this).toggleClass('active')" title="Agregar Tarea">
+                <span class="icon"><span class="mif-plus"></span></span>
+            </button>
+            <ul class="actions drop-right">
+                <li class="bg-blue"><a href="@Url.Action("Crear","Tareas")"><span class="mif-truck"></span></a></li>
+            </ul>
+        </div>
+
+        <!--.striped para sombrear las filas tipo cebra-->
+        <table class="table compact cell-border table-border bg-white row-hover row-border " data-horizontal-scroll="true" data-pagination-short-mode="true">
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Area interna</th>
+                    <th>Fecha/hora</th>
+                   
+                    <th>Estado</th>
+                    <th>Opciones</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Generacion OC</td>
+                    <td>Ingenieria</td>
+                    <td>11-05-16</td>
+
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>Generacion OC</td>
+                    <td>Ingenieria</td>
+                    <td>11-05-16</td>
+
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Generacion OC</td>
+                    <td>Ingenieria</td>
+                    <td>11-05-16</td>
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>
+

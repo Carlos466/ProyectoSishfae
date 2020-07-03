@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Tarea a usuario</title>
+
+
+    <style type="text/css">
+
+
+        table 
+        {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Asignar Tarea Usuario</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-6">
+
+                            <label>Usuario</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">usuario 1</option>
+                                <option value="2">usuario 2</option>
+                                <option value="3">usuario 3</option>
+                            </select>
+                        </div>
+                        <div class="cell-md-6">
+                            <label>Unidad de negocio</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">Unidad 1</option>
+                                <option value="2">Unidad 2</option>
+                                <option value="3">Unidad 3</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="cell-md-6">
+                            <label>Centro de costo</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">Centro 1</option>
+                                <option value="2">Centro 2</option>
+                                <option value="3">Centro 3</option>
+                            </select>
+                        </div>
+                        <div class="cell-md-6">
+                            <label>Tarea</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">tarea 1</option>
+                                <option value="2">tarea 2</option>
+                                <option value="3">tarea 3</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="cell-md-6">
+                        <label>N° Horas</label>
+                        <input type="number" required="">
+                        <div class="invalid_feedback">Ingrese cantidad de horas</div>
+                    </div>
+
+
+                    <!--Botones de Crear y volver atras-->
+                    <button class="button primary">Crear</button>
+                    <input type="reset" class="button" value="Limpiar" />
+                    <a href="@Url.Action("Index","Tareas")"> <input type="button" value="Atras"></a>
+                </form>
+            </div>
+        </div>
+</div><!--div container-->
+</body>
+</html>

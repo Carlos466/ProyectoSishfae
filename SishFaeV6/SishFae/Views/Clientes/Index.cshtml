@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Clientes</title>
+
+
+    <style type="text/css">
+
+
+        table {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <br />
+        <h3 class="dashboard-section-title  text-center text-left-md w-100">Lista de clientes</h3>
+        <br />
+        <br />
+
+        <!--Menu verde alternativo-->
+        <!--bg-cyan es para darle un color al fondo del menu izquierdo y fg-white cambia el color de las letras
+        <ul class="d-menu open pos-static bg-cyan fg-white">
+            <li><a href="@Url.Action("Crear","Clientes")"><span class="mif-user icon"></span> Agregar Usuario</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Algo 2</a></li>
+            <li><a href="#">Algo 3</a></li>
+            <li><a href="#">Location</a></li>
+        </ul>
+        -->
+        <!--Boton + para agregar Usuario-->
+        <div class="multi-action">
+            <button class="action-button rotate-minus bg-green fg-white" onclick="myFunction()" title="Agregar Cliente">
+                <span class="icon"><span class="mif-plus"></span></span>
+            </button>
+
+            @*<a href="@Url.Action("Crear","Clientes")" class="action-button rotate-minus bg-green fg-white"><span class="mif-plus"></span></a>
+
+                <ul class="actions drop-right">
+                    <li class="bg-blue"><a href="@Url.Action("Crear","Clientes")"><span class="mif-plus"></span></a></li>
+                </ul>*@
+        </div>
+
+        <!--.striped para sombrear las filas tipo cebra-->
+        <table class="table compact cell-border table-border bg-white row-hover row-border " data-horizontal-scroll="true" data-pagination-short-mode="true">
+            <thead>
+                <tr style="text-align:center">
+                    <th>Codigo</th>
+                    <th>Rut</th>
+                    <th>Razon Social</th>
+                    <th>Direccion</th>
+                    <th>Fecha Registro</th>
+                    <th>Opciones</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>431</td>
+                    <td>9280500-9</td>
+                    <td>ABB SA</td>
+                    <td>AV VICUÑA MACKENA</td>
+                    <td>2020-04-14 14:20:03</td>
+
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>9280500-9</td>
+                    <td>TEST_PMA</td>
+                    <td>AV VICUÑA MACKENA</td>
+                    <td>2020-04-14 14:20:03</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>431</td>
+                    <td>9280500-9</td>
+                    <td>ABB SA</td>
+                    <td>AV VICUÑA MACKENA</td>
+                    <td>2020-04-14 14:20:03</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>
+<script>
+    function myFunction() {
+        alert(1);
+    }
+</script>
+

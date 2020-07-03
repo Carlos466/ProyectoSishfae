@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar usuarios</title>
+
+
+    <style type="text/css">
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+        <br />
+        <h3 class="dashboard-section-title  text-center text-left-md w-100">Editar Usuario</h3>
+        <br />
+       
+
+        
+
+        <!--bg-cyan es para darle un color al fondo del menu izquierdo y fg-white cambia el color de las letras-->
+        <ul class="d-menu open pos-static bg-red fg-white">
+            <li><a href="@Url.Action("Listar","Usuarios")"><span class="mif-arrow-left icon"></span>Atras </a></li>
+        </ul>
+        <br />
+        <br />
+
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Actualizar datos de Usuario</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-3">
+                            <label>Rut</label>
+                            <input type="text" required="" value="12345678-9">
+                            <div class="invalid_feedback">Ingrese el Rut</div>
+                        </div>
+
+                        <div class="cell-md-9">
+                            <label>Nombre</label>
+                            <input type="text" required value="Pizarro">
+                            <div class="invalid_feedback">Ingrese el Nombre</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-3">
+                            <label>Alias</label>
+                            <input type="text" required value="Gates">
+                            <div class="invalid_feedback">Ingrese el Alias</div>
+                        </div>
+
+                        <div class="cell-md-9">
+                            <label>Direccion</label>
+                            <input type="text" required="" value="Av. los carrera">
+                            <div class="invalid_feedback">Ingrese La direccion</div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-9">
+                            <label>Email</label>
+                            <input type="text" required="" value="prueba@gmail.com">
+                            <div class="invalid_feedback">Ingrese el Email</div>
+                        </div>
+
+                        <div class="cell-md-3">
+                            <label>Telefono</label>
+                            <input type="number" required="" placeholder="Telefono" value="5665116">
+                            <div class="invalid_feedback">Ingrese el Telefono</div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="cell-md-6">
+                            <label>Password</label>
+                            <input type="password" data-role="input" required="" value="156196">
+                            <div class="invalid_feedback">Ingrese una clave</div>
+                        </div>
+
+                        <!--Lista desplegable-->
+                        <div class="cell-md-6">
+                            <label>Empresa</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="Empresa 1">Empresa 1</option>
+                                <option value="Empresa 2">Empresa 2</option>
+                                <option value="Empresa 3">Empresa 3</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-2">
+                        <!--Lista desplegable-->
+                        <div class="cell-md-6">
+                            <label>Tipo Usuario</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="Habilitado">Habilitado</option>
+                                <option value="Inahibilitado">Inahibilitado</option>
+                                <option value="En espera">En espera</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Actualizar" />
+                    <a href="@Url.Action("Listar","Usuarios")"> <input type="button" value="Atras"></a>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

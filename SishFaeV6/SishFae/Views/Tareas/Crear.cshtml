@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Tarea</title>
+
+
+    <style type="text/css">
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Registrar nueva Tarea</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-6">
+                            <label>codigo Tarea</label>
+                            <input type="number" required="">
+                            <div class="invalid_feedback">Ingrese el codigo de la Tarea</div>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Nombre de Tarea</label>
+                            <input type="text" required="">
+                            <div class="invalid_feedback">Ingrese el nombre de Tarea</div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row mb-3">
+                        <!--Lista desplegable-->
+                        <div class="cell-md-6">
+                            <label>Estado</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="Habilitado">Habilitado</option>
+                                <option value="En espera">En Espera</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Horas</label>
+                            <input type="number" required="">
+                            <div class="invalid_feedback">Ingrese el total de Horas</div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-3">
+                        <!--Lista desplegable-->
+                        <div class="cell-md-6">
+                            <label>Area</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="Habilitado">Area 1</option>
+                                <option value="En espera">Area 2</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                        <!--Botones de Crear y volver atras-->
+                        <button class="button primary">Crear</button>
+                        <input type="reset" class="button" value="Limpiar" />
+                        <a href="@Url.Action("Index","Tareas")"> <input type="button" value="Atras"></a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

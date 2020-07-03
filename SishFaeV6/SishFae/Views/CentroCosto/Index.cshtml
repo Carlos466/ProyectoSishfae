@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Costo</title>
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <br />
+        <h3 class="dashboard-section-title  text-center text-left-md w-100">Lista de Centros de Costo</h3>
+        <br />
+        <br />
+
+
+        <!--Boton + para crear un nuevo registro-->
+        <div class="multi-action">
+            <button class="action-button rotate-minus bg-green fg-white" onclick="$(this).toggleClass('active')" title="Crear Centro Costo">
+                <span class="icon"><span class="mif-plus"></span></span>
+            </button>
+            <ul class="actions drop-right">
+                <li class="bg-blue"><a href="@Url.Action("Crear","CentroCostos")"><span class="mif-truck" title="Nuevo Centro Costo"></span></a></li>
+            </ul>
+        </div>
+
+        <!--.striped para sombrear las filas tipo cebra-->
+        <table class="table compact cell-border table-border bg-white row-hover row-border " data-horizontal-scroll="true" data-pagination-short-mode="true">
+            <thead>
+                <tr>
+                    <th>unidad de Negocio</th>
+                    <th>Rut Cliente Primserv</th>
+                    <th>cliente primser</th>
+                    <th>CC</th>
+                    <th>Proyecto</th>
+                    <th>Horas</th>
+                    <th>Fecha Registro</th>
+                    <th>Estado</th>
+                    <th >Opciones</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Proyectos</td>
+                    <td>92805000-9</td>
+                    <td>ABB SA</td>
+                    <td>2222</td>
+                    <td>SERVICIO DE ASISTENCIA TÉCNICA</td>
+                    <td>100</td>
+                    <td>2020-05-07 20:53:19</td>
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="2">Tarea a Centro Costo</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proyectos</td>
+                    <td>92805000-9</td>
+                    <td>ABB SA</td>
+                    <td>2222</td>
+                    <td>SERVICIO DE ASISTENCIA TÉCNICA</td>
+                    <td>100</td>
+                    <td>2020-05-07 20:53:19</td>
+                    <td>habilitado</td>
+                    <td>
+                    <select>
+                        <option value="1">Seleccione Opcion</option>
+                        <option value="1">Ver</option>
+                        <option value="2">Modificar</option>
+                        <option value="2">Tarea a Centro Costo</option>
+                        <option value="3">Eliminar</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proyectos</td>
+                    <td>92805000-9</td>
+                    <td>ABB SA</td>
+                    <td>2222</td>
+                    <td>SERVICIO DE ASISTENCIA TÉCNICA</td>
+                    <td>100</td>
+                    <td>2020-05-07 20:53:19</td>
+                    <td>habilitado</td>
+                    <td>
+                    <select>
+                        <option value="1">Seleccione Opcion</option>
+                        <option value="1">Ver</option>
+                        <option value="2">Modificar</option>
+                        <option value="2">Tarea a Centro Costo</option>
+                        <option value="3">Eliminar</option>
+                    </select>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>

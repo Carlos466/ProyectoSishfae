@@ -1,0 +1,35 @@
+﻿<div class="container">
+    <br />
+    <h3 class="dashboard-section-title  text-center text-left-md w-100">Lista Areas</h3>
+    <br />
+    <div class="multi-action">
+        <a href="@Url.Action("Crear", "Area")" class="action-button rotate-minus bg-green fg-white"><span class="mif-plus"></span></a>
+    </div>
+    <div class="cell-10">
+        <table class="table compact cell-border table-border bg-white row-hover row-border" data-horizontal-scroll="true" data-pagination-short-mode="true">
+            <thead>
+                <tr>
+                    <th>C&oacute;digo</th>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1561</td>
+                    <td>Bill</td>
+                    <td>11-05-16</td>
+                    <td>
+                        <select>
+                            <option value="0">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

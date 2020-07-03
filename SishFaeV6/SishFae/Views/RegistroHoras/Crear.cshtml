@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Horas</title>
+
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Registrar Hora</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-6">
+                            
+                                <label>Centro de costo</label>
+                                <select>
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Centro 1 </option>
+                                    <option value="2">Centro 2 </option>
+                                    <option value="3">Centro 3</option>
+                                </select>
+                            
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Tarea</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">tarea 1 </option>
+                                <option value="2">tarea 2 </option>
+                                <option value="3">tarea 3</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-6">
+                            <label>Fecha</label>
+                            <input type="text" data-role="calendarpicker" data-format="%d-%m-%Y">
+                            <div class="invalid_feedback">Ingrese la Fecha</div>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Hora inicio</label>
+                            <input type="text" required="" >
+                            <div class="invalid_feedback">Ingrese la Hora de inicio</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-6">
+                            <label>Hora Fin</label>
+                            <input type="text" >
+                            <div class="invalid_feedback">Ingrese la Hora de termino</div>
+                        </div>
+
+
+                       
+                    </div>
+
+                   
+
+
+
+                    <!--Botones de Crear y volver atras-->
+                    <button class="button primary">Guardar</button>
+                    <input type="reset" class="button" value="Limpiar" />
+                    <a href="@Url.Action("Index","RegistroHoras")"> <input type="button" value="Atras"></a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+

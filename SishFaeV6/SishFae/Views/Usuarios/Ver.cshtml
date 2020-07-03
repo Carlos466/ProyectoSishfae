@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Usuario</title>
+
+
+    <style type="text/css">
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <br />
+        <!--<h3 class="dashboard-section-title  text-center text-left-md w-100">Datos Usuario</h3>-->
+        
+
+        <!--bg-cyan es para darle un color al fondo del menu izquierdo y fg-white cambia el color de las letras-->
+        <ul class="d-menu open pos-static bg-red fg-white">
+            <li><a href="@Url.Action("Listar","Usuarios")"><span class="mif-arrow-left icon"></span>Atras </a></li>
+        </ul>
+        <br />
+        <br />
+
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Detalle de Usuario</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-3">
+                            <label>Rut</label>
+                            <input type="text" value="12345678-9" disabled>
+
+                        </div>
+
+                        <div class="cell-md-9">
+                            <label>Nombre</label>
+                            <input type="text" value="Pizarro" disabled>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-3">
+                            <label>Alias</label>
+                            <input type="text" value="Gates" disabled>
+
+                        </div>
+
+                        <div class="cell-md-9">
+                            <label>Direccion</label>
+                            <input type="text" value="Av. los carrera" disabled>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+
+                        <div class="cell-md-9">
+                            <label>Email</label>
+                            <input type="text" value="prueba@gmail.com" disabled>
+
+                        </div>
+
+                        <div class="cell-md-3">
+                            <label>Telefono</label>
+                            <input type="number" value="5665116" disabled>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="cell-md-6">
+                            <label>Password</label>
+                            <input type="password" disabled value="41847">
+
+                        </div>
+
+                        <!--Lista desplegable-->
+                        <div class="cell-md-3">
+                            <label>Empresa</label>
+                            <input type="text" value="Empresa1" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-2">
+                        <!--Lista desplegable-->
+                        <div class="cell-md-6">
+                            <label>tipo de usuario</label>
+                            <input type="text" value="logistica" disabled>
+
+                        </div>
+                    </div>
+                    <a href="@Url.Action("Listar","Usuarios")"> <input type="button" value="Atras"></a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+

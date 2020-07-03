@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Centro Costo</title>
+
+
+    <style type="text/css">
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="cell-lg-9 p-4 m-0">
+         <a href="@Url.Action("index","CentroCostos")"><input type="button" value="Volver al listado" class="bg-green" /></a>
+         </div>
+
+        <div class="cell-lg-9">
+
+            <div class="bg-white p-4 m-2">
+                <h4>Registrar tarea a centro costo</h4>
+
+                <form class="custom-validation need-validation" novalidate="">
+
+                    <div class="row mb-3">
+                        <div class="cell-md-6">
+                            <label>Seleccione area</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">area 1</option>
+                                <option value="2">area 2</option>
+                                <option value="3">area 3</option>
+                            </select>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Tarea</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">tarea 1</option>
+                                <option value="2">tarea 2</option>
+                                <option value="3">Otro</option>
+                            </select>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row mb-3">
+                        <!--Lista desplegable-->
+
+
+                        <div class="cell-md-6">
+
+                            <label>Grupo Actividad</label>
+                            <select>
+                                <option selected>Seleccione</option>
+                                <option value="1">Grupo 1</option>
+                                <option value="2">Grupo 2</option>
+                                <option value="3">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="cell-md-6">
+                            <label>Horas</label>
+                            <input type="text" />
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!--Botones de Crear y volver atras-->
+                    <button class="button primary">Crear</button>
+                    <input type="reset" class="button" value="Limpiar" />
+                    <a href="@Url.Action("Index","CentroCostos")"> <input type="button" value="Atras"></a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

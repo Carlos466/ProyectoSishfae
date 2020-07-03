@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="~/Content/metro-all.min.css">
+    <link rel="stylesheet" href="~/Content/Css/index.css">
+    <link rel="stylesheet" href="~/Content/Css/Globlal.css" />
+
+    <title>Pandora - Admin template build with Metro 4</title>
+
+</head>
+<body class="m4-cloak h-vh-100">
+    <div data-role="navview" data-toggle="#paneToggle" data-expand="xl" data-compact="lg" data-active-state="true">
+        @Html.Partial("_Menu")
+        <div class="navview-content h-100">
+            @Html.Partial("_Header")
+
+            <div id="content-wrapper" class="content-inner h-100" style="overflow-y: auto">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="ModalGeneral">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-titulo">
+                    <h4 class="modal-title">Large Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color:white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer justify-content-between bg-titulo">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+    </div>
+
+    <!-- jQuery first, then Metro UI JS -->
+    <script src="~/vendors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="~/vendors/chartjs/Chart.bundle.min.js"></script>
+    <script src="~/vendors/qrcode/qrcode.min.js"></script>
+    <script src="~/vendors/jsbarcode/JsBarcode.all.min.js"></script>
+    <script src="~/vendors/ckeditor/ckeditor.js"></script>
+    <script src="~/vendors/metro4/js/metro.min.js"></script>
+    <script src="~/Scripts/js/index.js"></script>
+</body>
+</html>

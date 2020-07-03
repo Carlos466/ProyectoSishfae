@@ -1,0 +1,23 @@
+﻿@model SishFae.Models.Areas
+
+<div class="container">
+    <div class="cell-lg-6">
+        <div class="bg-white p-4 m-2">
+            <h4>Crear Area</h4>
+            <form method="post" action="@Url.Action("Crear","Area")">
+                <div class="row mb-3">
+                    <div class="cell-md-3"><label>Nombre de Area</label></div>
+                    <div class="cell-md-9">
+
+                        <input type="text" maxlength="25" name="Nombres" placeholder="Ej: Sistemas">
+                        @Html.ValidationMessageFor(Model => Model.NombreArea)
+                    </div>
+                </div>
+                <button class="button primary">Guardar</button>
+                <input type="reset" class="button" value="Limpiar" />
+                <a href="@Url.Action("Index","Area")"> <input type="button" value="Atras"></a>
+            </form>
+        </div>
+    </div>
+</div>
+

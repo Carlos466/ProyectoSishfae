@@ -1,0 +1,75 @@
+﻿@model SishFae.Models.CentroCosto
+
+<div class="container">
+    <div class="cell-lg-9">
+
+        <div class="bg-white p-4 m-2">
+            <h4>Crear centro costo</h4>
+            
+
+            <form class="custom-validation need-validation" novalidate="" method="post" action="@Url.Action("Crear","CentroCostos")">
+
+                <div class="row mb-3">
+                    <div class="cell-md-6">
+                        <label>Unidad de Negocio</label>
+                        <select>
+                            <option selected name="UnidadNegocio">Seleccione</option>
+                            <option value="1">Negocio 1 </option>
+                            <option value="2">Negocio 2 </option>
+                            <option value="3">Negocio 3</option>
+                        </select>
+                        @Html.ValidationMessageFor(Model => Model.UnidadNegocio)
+                    </div>
+
+
+                    <div class="cell-md-6">
+                        <label>Codigo Centro Costo</label>
+                        <input type="text" maxlength="11" name="CodCentroCosto">
+                    </div>
+                    @Html.ValidationMessageFor(Model => Model.CodCentroCosto)
+
+                </div>
+
+
+                <div class="row mb-2">
+
+                    <div class="cell-md-6">
+                        <label>Cliente Primser</label>
+                        <select>
+                            <option selected name="ClientePrimser">Seleccione</option>
+                            <option value="1">cliente 1 </option>
+                            <option value="2">cliente 2 </option>
+                            <option value="3">cliente 3 </option>
+                        </select>
+                        @Html.ValidationMessageFor(Model => Model.ClientePrimser)
+                    </div>
+
+                    <div class="cell-md-6">
+                        <label>Proyecto</label>
+                        <input type="text" name="Proyecto" maxlength="100">
+
+                    </div>
+                    @Html.ValidationMessageFor(Model => Model.Proyecto)
+                </div>
+
+
+                <div class="row mb-2">
+                    <div class="cell-md-6">
+                        <label>N° de Horas</label>
+                        <input type="number" name="NHoras" maxlength="20">
+                        <div class="invalid_feedback">Ingrese la cantidad de horas</div>
+                    </div>
+                    @Html.ValidationMessageFor(Model => Model.NHoras)
+                </div>
+
+
+
+                <!--Botones de Crear y volver atras-->
+                <button class="button primary">Guardar</button>
+                <input type="reset" class="button" value="Limpiar" />
+                <a href="@Url.Action("Index","CentroCostos")"> <input type="button" value="Atras"></a>
+
+            </form>
+        </div>
+    </div>
+</div>

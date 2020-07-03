@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar usuarios</title>
+
+
+<style type="text/css">
+
+    
+    table{
+        text-align:center;
+        
+    }
+
+ </style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <br />
+        <h3 class="dashboard-section-title  text-center text-left-md w-100">Lista de Usuarios</h3>
+        <br />
+        <br />
+
+
+    
+
+
+        <!--Boton + para agregar Usuario-->
+        <div class="multi-action">
+            <button class="action-button rotate-minus bg-green fg-white" onclick="$(this).toggleClass('active')" title="Agregar Usuario">
+                <span class="icon"><span class="mif-plus"></span></span>
+            </button>
+            <ul class="actions drop-right">
+                <li class="bg-blue"><a href="@Url.Action("Crear","Usuarios")"><span class="mif-user-plus" title="Agregar Usuario"></span></a></li>
+            </ul>
+        </div>
+
+        <!--.striped para sombrear las filas tipo cebra-->
+        <table class="table compact cell-border table-border bg-white row-hover row-border " data-horizontal-scroll="true" data-pagination-short-mode="true" >
+            <thead >
+                <tr>
+                    <th>Rut</th>
+                    <th>Nombre</th>
+                    <th>ALIAS</th>
+                    <th>FechaHora</th>
+                    <th>Email</th>
+                    <th>Estado</th>
+                    <th>EstadoNombre</th>
+                    <th>Opciones</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>156156-6</td>
+                    <td>Bill</td>
+                    <td>billy</td>
+                    <td>11-05-16</td>
+                    <td>algo@gmail.com</td>
+                    <td>1</td>
+                    <td>habilitado</td>
+
+                    @*<td><a href="@Url.Action("Ver","Usuarios")">Ver</a></td>
+        <td><a href="@Url.Action("Editar","Usuarios")">Modificar</a></td>
+        <td><a href="#">Eliminar</a></td>*@
+
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                              <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>65465115-5</td>
+                    <td>Steve</td>
+                    <td>stevy</td>
+                    <td>11-05-16</td>
+                    <td>algo@gmail.com</td>
+                    <td>1</td>
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8951565-6</td>
+                    <td>Larry</td>
+                    <td>Page</td>
+                    <td>11-05-16</td>
+                    <td>algo@gmail.com</td>
+                    <td>1</td>
+                    <td>habilitado</td>
+                    <td>
+                        <select>
+                            <option value="1">Seleccione Opcion</option>
+                            <option value="1">Ver</option>
+                            <option value="2">Modificar</option>
+                            <option value="3">Eliminar</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>
